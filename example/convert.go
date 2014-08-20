@@ -14,8 +14,14 @@ import (
 
 func main() {
 	var e error
+	var filename string
 
-	filename := "temp.tga"
+	if len(os.Args) > 1 {
+		filename = os.Args[1]
+	} else {
+		filename = "example/temp.tga"
+	}
+	fmt.Println("Opening", filename)
 
 	f, err := os.Open(filename)
 	if e != nil {
