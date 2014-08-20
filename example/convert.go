@@ -19,7 +19,7 @@ func main() {
 	if len(os.Args) > 1 {
 		filename = os.Args[1]
 	} else {
-		filename = "example/temp.tga"
+		filename = "example/targa.tga"
 	}
 	fmt.Println("Opening", filename)
 
